@@ -158,14 +158,48 @@ client.on("message", async message => {
 });
 
 
+client.on('message', message => {
+            if (message.content === 'هلا') {
+              message.channel.send('**هلا والله بيك منور السيرفر**');
+              message.channel.sendFile("./photoshop.PNG");
+               
 
-client.on('message',function(message) {
-  if(!message.channel.guild) return undefined;
-  const swearWords = ["هلا"];
-  if (swearWords.some(word => message.content.includes(word)) ) {
-    message.reply("هلا والله بيك منور السيرفر"); 
-  }
+            }
 });
+
+
+
+client.on('message', message => {
+            if (message.content === 'السلام عليكم') {
+              message.channel.send('**وعليكم السلام**');
+              message.channel.sendFile("./photoshop.PNG");
+               
+
+            }
+});
+
+
+
+client.on('message', message => {
+            if (message.content === 'bro ghost') {
+              message.channel.send('**نعم**');
+              message.channel.sendFile("./photoshop.PNG");
+               
+
+            }
+});
+
+
+client.on('message', message => {
+            if (message.content === 'ههههههه') {
+              message.channel.send('**هههههههههههههههه**');
+              message.channel.sendFile("./photoshop.PNG");
+               
+
+            }
+});
+
+
 
 
 
