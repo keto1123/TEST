@@ -159,6 +159,16 @@ client.on("message", async message => {
 
 
 
+client.on('message',function(message) {
+  if(!message.channel.guild) return undefined;
+  const swearWords = ["هلا"];
+  if (swearWords.some(word => message.content.includes(word)) ) {
+    message.reply("هلا والله بيك منور السيرفر"); 
+  }
+});
+
+
+
 
 
 
