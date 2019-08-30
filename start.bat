@@ -1,0 +1,2 @@
+NODE clear.js
+pause
